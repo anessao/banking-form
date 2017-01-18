@@ -22,20 +22,39 @@
 			<br>
 
 			<!-- Applicant address -->
-			<label for="street">Street Name</label>
+			<p>Address:</p>
+			<label for="street">Street</label>
 			<input type="text" name="street" placeholder="123 Anywhere St">
 
 			<label for="state">State</label>
 			<input type="text" name="state" maxlength="2">
 
 			<label for="zipcode">Zip</label>
-			<input type="number" name="zipcode" placeholder="11111">
+			<input type="text" name="zipcode" placeholder="11111">
+		</fieldset>
+		<fieldset>
+			<legend>Employment Information</legend>
 			<!-- Applicant occupation -->
+			<label for="occupation">Job Title</label>
+			<input type="text" name="occupation" placeholder="Graphic Designer">
+			<br>
 
 			<!-- Applicant employer -->
+			<label for="employer">Employer</label>
+			<input type="text" name="employer">
+			<br>
 
 			<!-- Employer address -->
-		</fieldset>
+			<p>Address:</p>
+			<label for="employer-street">Street</label>
+			<input type="text" name="employer-street" placeholder="123 Work St">
+
+			<label for="employer-state">State</label>
+			<input type="text" name="employer-state" maxlength="2">
+
+			<label for="employer-zipcode">Zip</label>
+			<input type="text" name="employer-zipcode" placeholder="11111">
+
 		<!-- Type of loan select element with these options: -->
 				<!-- Commercial
 				Real estate
