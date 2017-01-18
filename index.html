@@ -45,7 +45,7 @@
 			<br>
 
 			<!-- Employer address -->
-			<p>Address:</p>
+			<p>Employer Address:</p>
 			<label for="employer-street">Street</label>
 			<input type="text" name="employer-street" placeholder="123 Work St">
 
@@ -54,25 +54,51 @@
 
 			<label for="employer-zipcode">Zip</label>
 			<input type="text" name="employer-zipcode" placeholder="11111">
-
+		</fieldset>
+		<fieldset>
+			<legend>Loan Information</legend>
 		<!-- Type of loan select element with these options: -->
 				<!-- Commercial
 				Real estate
 				Personal
 				Mortgage -->
+				<label for="loan-type">Select Loan Type:</label>
+				<select name="loan-type">
+					<option value="commercial">Commercial</option>
+					<option value="real estate">Real Estate</option>
+					<option value="personal">Personal</option>
+					<option value="mortgage">Mortgage</option>
+				</select>
+				<br>
 
 		<!-- Requested amount of loan -->
+				<label for="loan-amount">Enter Requested Loan Amount</label>
+				<input type="number" name="loan-amount" placeholder="eg. 30,000">
+				<br>
 
 		<!-- Radio button elements for loan length -->
 				<!-- 5 years
 				15 years
 				30 years -->
-
+				<label for="loan-length">Chose length of loan:</label>
+				<br>
+				5 Years<input type="radio" name="loan-length" value="5 years">
+				15 Years<input type="radio" name="loan-length" value="15 years">
+				30 Years<input type="radio" name="loan-length" value="30 years">
+				<br>
 		<!-- Checkbox group for special conditions -->
 				<!-- I have a down payment
 				Out-of-state resident
 				Married
 				Loan will be co-signed -->
+				<label for="conditions">Check All That Apply:</label><br>
+				I have a down payment<input type="checkbox" name="conditions" value="yes downpayment"><br>
+				Out-of-state resident<input type="checkbox" name="conditions" value="out-of-state"><br>
+				Married<input type="checkbox" name="conditions" value="married"><br>
+				Loan will be co-signed<input type="checkbox" name="conditions" value="co-signed"><br>
+		</fieldset>
+		<fieldset>
+		<legend>Additional Information</legend>
 
 		<!-- A text area to allow for additional comments -->
 
@@ -81,7 +107,7 @@
 		<!-- Applicant telephone number -->
 
 		<!-- Applicant LinkedIn URL -->
-
+		</fieldset>
 	</form>
 </body>
 </html>
