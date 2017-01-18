@@ -98,15 +98,26 @@
 				Loan will be co-signed<input type="checkbox" name="conditions" value="co-signed"><br>
 		</fieldset>
 		<fieldset>
-		<legend>Additional Information</legend>
+			<legend>Additional Information</legend>
 
-		<!-- A text area to allow for additional comments -->
+			<!-- A text area to allow for additional comments -->
+			<label for="comments">Additional Comments:</label><br>
+			<textarea name="comments"></textarea>
+			<br>
 
-		<!-- Applicant email address -->
+			<!-- Applicant email address -->
+			<label for="user-email">Email:</label>
+			<input type="email" name="user-email">
+			<br>
 
-		<!-- Applicant telephone number -->
-
-		<!-- Applicant LinkedIn URL -->
+			<!-- Applicant telephone number -->
+			<label for="phone-num">Phone Number:</label>
+			<input type="telephone" name="phone-num">
+			<br>
+			<!-- Applicant LinkedIn URL -->
+			<label for="linkedin">Your LinkedIn Link:</label>
+			<input type="url" name="linkedin">
+			<br>
 		</fieldset>
 	</form>
 </body>
