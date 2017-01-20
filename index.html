@@ -11,7 +11,7 @@
 			<legend>Personal Information</legend>
 			
 				<!-- Applicant first name -->
-				<label for="first-name">First Name</label>
+				<span class="required">* </span><label for="first-name">First Name</label>
 				<input type="text" name="first-name" required>
 				
 				<!-- Applicant middle initial -->
@@ -19,12 +19,12 @@
 				<input type="text" name="middle-initial" maxlength="1">
 
 				<!-- Applicant last name -->
-				<label for="last-name">Last Name</label>
+				<span class="required">* </span><label for="last-name">Last Name</label>
 				<input type="text" name="last-name" required>
-				<br>
+				<div class="break"><br></div>
 
 				<!-- Applicant address -->
-				<p>Address:</p>
+				<span class="required">* </span><span>Address:</span><br>
 				<label for="street">Street</label>
 				<input type="text" name="street" placeholder="123 Anywhere St" required>
 
@@ -37,17 +37,17 @@
 		<fieldset>
 			<legend>Employment Information</legend>
 				<!-- Applicant occupation -->
-				<label for="occupation">Job Title</label>
+				<span class="required">* </span><label for="occupation">Job Title</label>
 				<input type="text" name="occupation" placeholder="Graphic Designer" required>
-				<br>
+				<div class="break"><br></div>
 
 				<!-- Applicant employer -->
-				<label for="employer">Employer</label>
+				<span class="required">* </span><label for="employer">Employer</label>
 				<input type="text" name="employer" required>
-				<br>
+				<div class="break"><br></div>
 
 				<!-- Employer address -->
-				<p>Employer Address:</p>
+				<span class="required">* </span><span>Employer Address:</span><br>
 				<label for="employer-street">Street</label>
 				<input type="text" name="employer-street" placeholder="123 Work St" required>
 
@@ -64,61 +64,64 @@
 				Real estate
 				Personal
 				Mortgage -->
-				<label for="loan-type">Select Loan Type:</label>
+				<span class="required">* </span><label for="loan-type">Select Loan Type:</label>
 				<select name="loan-type" required>
 					<option value="commercial">Commercial</option>
 					<option value="real estate">Real Estate</option>
 					<option value="personal">Personal</option>
 					<option value="mortgage">Mortgage</option>
 				</select>
-				<br>
+				<div class="break"><br></div>
 
 		<!-- Requested amount of loan -->
-				<label for="loan-amount">Enter Requested Loan Amount</label>
+				<span class="required">* </span><label for="loan-amount">Enter Requested Loan Amount</label>
 				<input type="number" name="loan-amount" placeholder="eg. 30,000" required>
-				<br>
+				<div class="break"><br></div>
 
 		<!-- Radio button elements for loan length -->
 				<!-- 5 years
 				15 years
 				30 years -->
-				<label for="loan-length">Chose length of loan:</label>
+				<span class="required">* </span><label for="loan-length">Chose length of loan:</label>
 				<br>
-				5 Years<input type="radio" name="loan-length" value="5 years" required>
-				15 Years<input type="radio" name="loan-length" value="15 years" required>
-				30 Years<input type="radio" name="loan-length" value="30 years" required>
-				<br>
+				<span>5 Years  </span><input type="radio" name="loan-length" value="5 years" required>
+				<span>15 Years  </span><input type="radio" name="loan-length" value="15 years">
+				<span>30 Years  </span><input type="radio" name="loan-length" value="30 years">
+				<div class="break"><br></div>
 		<!-- Checkbox group for special conditions -->
 				<!-- I have a down payment
 				Out-of-state resident
 				Married
 				Loan will be co-signed -->
 				<label for="conditions">Check All That Apply:</label><br>
-				<input type="checkbox" name="conditions" value="yes downpayment">I have a down payment<br>
-				<input type="checkbox" name="conditions" value="out-of-state">Out-of-state resident<br>
-				<input type="checkbox" name="conditions" value="married">Married<br>
-				<input type="checkbox" name="conditions" value="co-signed">Loan will be co-signed<br>
+				<input type="checkbox" name="conditions" value="yes downpayment"><span>  I have a down payment</span>
+				<br>
+				<input type="checkbox" name="conditions" value="out-of-state"><span>  Out-of-state resident</span>
+				<br>
+				<input type="checkbox" name="conditions" value="married"><span>  Married</span>
+				<br>
+				<input type="checkbox" name="conditions" value="co-signed"><span>  Loan will be co-signed</span>
 		</fieldset>
 		<fieldset>
 			<legend>Additional Information</legend>
 				<!-- A text area to allow for additional comments -->
 				<label for="comments">Additional Comments:</label><br>
 				<textarea name="comments"></textarea>
-				<br>
+				<div class="break"><br></div>
 
 				<!-- Applicant email address -->
-				<label for="user-email">Email:</label>
+				<span class="required">* </span><label for="user-email">Email:</label>
 				<input type="email" name="user-email" placeholder="name@email.com" required>
-				<br>
+				<div class="break"><br></div>
 
 				<!-- Applicant telephone number -->
-				<label for="phone-num">Phone Number:</label>
+				<span class="required">* </span><label for="phone-num">Phone Number:</label>
 				<input type="tel" name="phone-num" required>
-				<br>
+				<div class="break"><br></div>
+
 				<!-- Applicant LinkedIn URL -->
-				<label for="linkedin">Your LinkedIn Link:</label>
-				<input type="url" name="linkedin" pattern="(http|https)://.+">
-				<br>
+				<label for="linkedin" required>Your LinkedIn Link:</label>
+				<input type="url" name="linkedin">
 		</fieldset>
 	</form>
 </body>
