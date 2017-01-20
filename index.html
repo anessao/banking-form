@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="validation.css">
+	<meta charset="utf-8">
+	<title>Loan Application</title>
+</head>
+<body>
+	<form action="javascript:void(0);">
+		<fieldset>
+			<legend>Personal Information</legend>
+			
+				<!-- Applicant first name -->
+				<label for="first-name">First Name</label>
+				<input type="text" name="first-name" required>
+				
+				<!-- Applicant middle initial -->
+				<label for="middle-initial">Middle Initial</label>
+				<input type="text" name="middle-initial" maxlength="1">
+
+				<!-- Applicant last name -->
+				<label for="last-name">Last Name</label>
+				<input type="text" name="last-name" required>
+				<br>
+
+				<!-- Applicant address -->
+				<p>Address:</p>
+				<label for="street">Street</label>
+				<input type="text" name="street" placeholder="123 Anywhere St" required>
+
+				<label for="state">State</label>
+				<input type="text" name="state" maxlength="2" required>
+
+				<label for="zipcode">Zip</label>
+				<input type="number" name="zipcode" placeholder="11111" required>
+		</fieldset>
+		<fieldset>
+			<legend>Employment Information</legend>
+				<!-- Applicant occupation -->
+				<label for="occupation">Job Title</label>
+				<input type="text" name="occupation" placeholder="Graphic Designer" required>
+				<br>
+
+				<!-- Applicant employer -->
+				<label for="employer">Employer</label>
+				<input type="text" name="employer" required>
+				<br>
+
+				<!-- Employer address -->
+				<p>Employer Address:</p>
+				<label for="employer-street">Street</label>
+				<input type="text" name="employer-street" placeholder="123 Work St" required>
+
+				<label for="employer-state">State</label>
+				<input type="text" name="employer-state" maxlength="2" required>
+
+				<label for="employer-zipcode">Zip</label>
+				<input type="number" name="employer-zipcode" placeholder="11111" required>
+		</fieldset>
+		<fieldset>
+			<legend>Loan Information</legend>
+		<!-- Type of loan select element with these options: -->
+				<!-- Commercial
+				Real estate
+				Personal
+				Mortgage -->
+				<label for="loan-type">Select Loan Type:</label>
+				<select name="loan-type" required>
+					<option value="commercial">Commercial</option>
+					<option value="real estate">Real Estate</option>
+					<option value="personal">Personal</option>
+					<option value="mortgage">Mortgage</option>
+				</select>
+				<br>
+
+		<!-- Requested amount of loan -->
+				<label for="loan-amount">Enter Requested Loan Amount</label>
+				<input type="number" name="loan-amount" placeholder="eg. 30,000" required>
+				<br>
+
+		<!-- Radio button elements for loan length -->
+				<!-- 5 years
+				15 years
+				30 years -->
+				<label for="loan-length">Chose length of loan:</label>
+				<br>
+				5 Years<input type="radio" name="loan-length" value="5 years" required>
+				15 Years<input type="radio" name="loan-length" value="15 years" required>
+				30 Years<input type="radio" name="loan-length" value="30 years" required>
+				<br>
+		<!-- Checkbox group for special conditions -->
+				<!-- I have a down payment
+				Out-of-state resident
+				Married
+				Loan will be co-signed -->
+				<label for="conditions">Check All That Apply:</label><br>
+				I have a down payment<input type="checkbox" name="conditions" value="yes downpayment"><br>
+				Out-of-state resident<input type="checkbox" name="conditions" value="out-of-state"><br>
+				Married<input type="checkbox" name="conditions" value="married"><br>
+				Loan will be co-signed<input type="checkbox" name="conditions" value="co-signed"><br>
+		</fieldset>
+		<fieldset>
+			<legend>Additional Information</legend>
+				<!-- A text area to allow for additional comments -->
+				<label for="comments">Additional Comments:</label><br>
+				<textarea name="comments"></textarea>
+				<br>
+
+				<!-- Applicant email address -->
+				<label for="user-email">Email:</label>
+				<input type="email" name="user-email" placeholder="name@email.com" required>
+				<br>
+
+				<!-- Applicant telephone number -->
+				<label for="phone-num">Phone Number:</label>
+				<input type="tel" name="phone-num" required>
+				<br>
+				<!-- Applicant LinkedIn URL -->
+				<label for="linkedin">Your LinkedIn Link:</label>
+				<input type="url" name="linkedin">
+				<br>
+		</fieldset>
+	</form>
+</body>
+</html>
