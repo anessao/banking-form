@@ -2,9 +2,11 @@
 <html>
 <head>
 	<title>Loan Application</title>
+	<link rel="stylesheet" type="text/css" href="validation.css">
+
 </head>
 <body>
-	<form action="javascript:void(0);">
+	<form> <!-- action="javascript:void(0);" -->
 		<fieldset>
 			<legend>Personal Information</legend>
 			
@@ -92,10 +94,10 @@
 				Married
 				Loan will be co-signed -->
 				<label for="conditions">Check All That Apply:</label><br>
-				I have a down payment<input type="checkbox" name="conditions" value="yes downpayment"><br>
-				Out-of-state resident<input type="checkbox" name="conditions" value="out-of-state"><br>
-				Married<input type="checkbox" name="conditions" value="married"><br>
-				Loan will be co-signed<input type="checkbox" name="conditions" value="co-signed"><br>
+				<input type="checkbox" name="conditions" value="yes downpayment">I have a down payment<br>
+				<input type="checkbox" name="conditions" value="out-of-state">Out-of-state resident<br>
+				<input type="checkbox" name="conditions" value="married">Married<br>
+				<input type="checkbox" name="conditions" value="co-signed">Loan will be co-signed<br>
 		</fieldset>
 		<fieldset>
 			<legend>Additional Information</legend>
@@ -115,7 +117,7 @@
 				<br>
 				<!-- Applicant LinkedIn URL -->
 				<label for="linkedin">Your LinkedIn Link:</label>
-				<input type="url" name="linkedin">
+				<input type="url" name="linkedin" pattern="(http|https)://.+">
 				<br>
 		</fieldset>
 	</form>

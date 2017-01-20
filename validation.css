@@ -1,1 +1,24 @@
-/*Initial commit*/
+/*CSS Styling*/
+body {
+	margin: 0 auto;
+	max-width: 75%;
+}
+fieldset * {
+	padding: 0;
+	margin: 0;
+}
+fieldset {
+	border: none;
+	border-radius: 10px;
+	background-color: #a6dade;
+	box-shadow: 3px 3px 2px #999;
+}
+
+
+/*FORM VALIDATION*/
+form input:valid {
+	background-color: green;
+}
+form input:invalid {
+	background-color: red;
+}
