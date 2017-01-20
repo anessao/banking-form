@@ -1,42 +1,82 @@
+/*CODE FOR INITIAL HOMEWORK ASSIGNMENT AT BOTTOM*/
+
 /*CSS Styling*/
 body {
+	font-family: "Roboto", sans-serif;
 	margin: 0 auto;
 	max-width: 75%;
+}
+h1 {
+	color: black;
+}
+#loan-form {
+	padding: 15px;
+	border: 4px solid green;
+	background-color: #e5e5e5;
+	border:4px solid #999;
+	box-shadow: 3px 3px 2px #999;
+	border-radius: 10px;
 }
 fieldset * {
 	padding-bottom: 0;
 	margin: 0;
 }
+fieldset legend {
+	font-size: 20px;
+}
 fieldset {
+	margin-bottom: 20px;
 	border-radius: 10px;
 	background-color: white;
-	border:4px solid #999;
-	box-shadow: 3px 3px 2px #999;
-}
+	border:2px solid white;
 
-input {
-	padding: 5px;
-	border-radius: 10px;
-	border: none;
 }
 .break {
 	padding: 0;
 	margin-bottom: 1px;
 }
 
-/*FORM VALIDATION*/
+/*INPUT AREA AND LABEL STYLING*/
+
+label {
+	margin-left: 5px;
+}
+input {
+	padding: 3px;
+	padding-left: 15px;
+	border-radius: 10px;
+}
+
+input.state {
+	max-width: 30px;
+}
+textarea {
+	max-height: 25px;
+	border: 2px solid #999;
+	border-radius: 10px;
+	margin-left: 4px;
+}
+#loan-amount {
+	width: 100px;
+}
+#comments {
+	display: inline-flex;
+}
+
+/*FORM VALIDATION: HOMEWORK ASSIGNMENT*/
 
 span.required {
 	color: red;
-
 }
-
-form input:focus:valid {
-	border: 4px solid #91c774;
-}
-form input:valid {
-	border: 4px solid #91c774;
+form input:valid,
+form input:valid:focus {
+	border: 3px solid #91c774;
 }
 form input:invalid {
-	border: 4px solid #ff153c;
+	border: 3px solid #ff153c;
 }
+
+
+
+
+
